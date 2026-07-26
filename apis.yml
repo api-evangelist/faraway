@@ -1,9 +1,27 @@
 aid: faraway
 name: Faraway
-description: Faraway is a company surfaced as a portfolio company of a16z, lightspeed-venture-partners,
-  pantera-capital and added to the API Evangelist network as a stub for enrichment. This profile is a
-  lead awaiting the enrichment pipeline.
+description: >-
+  Faraway is a web3 gaming company building an interoperable gaming ecosystem for
+  players, creators, and studios. Its platform lets game studios integrate player-driven,
+  blockchain-based economies into their titles across EVM-compatible chains and Solana,
+  with a unified player identity and wallet (id.faraway.com), a creator platform for
+  user-generated content and monetization (create.faraway.com), and an in-game marketplace
+  and secondary-trading shop (shop.faraway.com). Faraway publishes a developer platform
+  with an API reference and an llms.txt index at docs.faraway.com. The company is backed
+  by a16z, Lightspeed Venture Partners, and Pantera Capital.
 url: https://raw.githubusercontent.com/api-evangelist/faraway/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://faraway.com/unfurl.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -14,15 +32,65 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Gaming
+- Web3
+- Blockchain
+- Gaming Economy
+- Player Identity
+- Marketplace
+- Creator Platform
+- NFT
+- Developer Platform
+apis:
+- name: Faraway Platform API
+  description: >-
+    The Faraway Platform API surfaces the developer platform behind Faraway's
+    interoperable gaming ecosystem. Its API reference (login-gated) and llms.txt index
+    are published at docs.faraway.com; the API host is api.faraway.com.
+  humanURL: https://docs.faraway.com/reference
+  baseURL: https://api.faraway.com
+  tags:
+  - Gaming
+  - Web3
+  - Developer Platform
+  properties:
+  - type: Documentation
+    url: https://docs.faraway.com/
+  - type: APIReference
+    url: https://docs.faraway.com/reference
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/faraway-domain-security.yml
 - type: Website
-  url: https://faraway.gg/
+  url: https://faraway.com/
+- type: DeveloperPortal
+  url: https://docs.faraway.com/
+- type: Documentation
+  url: https://docs.faraway.com/
+- type: APIReference
+  url: https://docs.faraway.com/reference
+- type: SignUp
+  url: https://id.faraway.com/
+- type: Login
+  url: https://id.faraway.com/
+- type: Support
+  url: https://discord.gg/faraway
+- type: TermsOfService
+  url: https://faraway.com/terms
+- type: PrivacyPolicy
+  url: https://faraway.com/privacy
+- type: LLMsTxt
+  url: llms/faraway-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

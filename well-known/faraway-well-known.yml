@@ -1,0 +1,17 @@
+generated: '2026-07-19'
+method: searched
+source: probed /.well-known/ on Faraway hosts
+hosts:
+- host: https://faraway.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+- host: https://id.faraway.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+- host: https://docs.faraway.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+notes: No /.well-known/ discovery documents were served (all 404); identity at id.faraway.com does not expose OIDC discovery publicly.

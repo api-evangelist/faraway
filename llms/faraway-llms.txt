@@ -1,0 +1,6 @@
+# Faraway Platform Documentation
+
+> Documentation for Faraway Platform
+
+## Guides
+- [Documentation](https://docs.faraway.com/docs.md): Faraway Platform documentation
