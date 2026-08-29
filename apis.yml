@@ -10,6 +10,17 @@ description: >-
   with an API reference and an llms.txt index at docs.faraway.com. The company is backed
   by a16z, Lightspeed Venture Partners, and Pantera Capital.
 url: https://raw.githubusercontent.com/api-evangelist/faraway/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
